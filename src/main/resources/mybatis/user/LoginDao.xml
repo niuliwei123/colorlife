@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niuniu.app.user.dao.LoginDao">
+    <select id="addLoginner" parameterType="com.niuniu.app.user.domain.LoginKey">
+    	insert into loginkey (login_name,password) values ("${loginner.loginName}","${loginner.password}")
+    </select>
+</mapper>
